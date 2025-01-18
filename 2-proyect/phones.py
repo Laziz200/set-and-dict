@@ -999,9 +999,6 @@ phones = [{"brand":"Samsung","model":"Samsung A777","date":2008},
 {"brand":"Emporia","model":"Emporia Connect","date":2012},
 {"brand":"Motorola","model":"Motorola Moto G9 (India)","date":2020}]
 
-# code yozing
-# natija quyidagicha chiqsin
-
 new_list=[]
 samsung=0
 Motorola=0
@@ -1036,15 +1033,3 @@ for i in phones:
     count=0
     if b==2025:
         break
-"""
-Hisobot:
-- Brandlar:
-    - Samsung telefonlar: 300 ta 30%i
-    - Motorolla telefonlar: 150 ta 15%i
-    ....
-- Yillar (2000-2025):
-    - 2000 yilda: 20 ta 2%i
-    - 2001 yilda: 40 ta 4%i
-    - 2002 yilda: 70 ta 7%i
-    ....
-"""

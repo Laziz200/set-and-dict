@@ -48,6 +48,11 @@ data = [
 # satri bor barcha hodimlarni o'chirib tashlang
 
 # 6 - masala "Assistant" lar soni nechtaligini hisoblang
+count = 0
+for e in data:
+    if e['position'].lower().endswith("assistant"):
+        count += 1
+print(f"Assistantlar soni: {count}")
 
 # 7 - masala Barcha "Assistant" larni "Junior" pazitsiyaga o'tqazing
 # misol -> "Assistant Professor" -> "Junior Professor"

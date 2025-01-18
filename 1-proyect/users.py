@@ -24,10 +24,6 @@ users = [
         "age": 10
     },
 ]
-
-
-##youngest = max(users, key=lambda user: len(user['first_name']))
-#print(youngest)
 female=0
 male=0
 for e in users:
