@@ -1,3 +1,4 @@
+from pprint import pprint
 data = [
     {"full_name":"Eugene Elsmor","company":"Kazu","position":"Electrical Engineer","salary":"$4440.86"},
     {"full_name":"Joni Stredder","company":"JumpXS","position":"Environmental Tech","salary":"$870.05"},
@@ -48,11 +49,14 @@ data = [
 # satri bor barcha hodimlarni o'chirib tashlang
 
 # 6 - masala "Assistant" lar soni nechtaligini hisoblang
-count = 0
-for e in data:
-    if e['position'].lower().endswith("assistant"):
-        count += 1
-print(f"Assistantlar soni: {count}")
+# count = 0
+# for e in data:
+#     if e['position'].lower().endswith("assistant"):
+#         count += 1
+# print(f"Assistantlar soni: {count}")
 
 # 7 - masala Barcha "Assistant" larni "Junior" pazitsiyaga o'tqazing
 # misol -> "Assistant Professor" -> "Junior Professor"
+for i in data:
+        i["position"]=i["position"].replace("Assistant", "Junior")
+pprint(data)
